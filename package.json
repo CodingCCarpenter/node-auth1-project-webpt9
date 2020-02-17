@@ -1,7 +1,7 @@
 {
-  "name": "node-auth1-project",
+  "name": "node-auth1-project-webpt9",
   "version": "1.0.0",
-  "description": "Web Auth I Module Challenge",
+  "description": "Web Auth Module I Challenge",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,12 +15,15 @@
   "author": "Christine Carpenter",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/javavick/node-auth1-project/issues"
+    "url": "https://github.com/CodingCCarpenter/node-auth1-project-webpt9"
   },
-  "homepage": "https://github.com/javavick/node-auth1-project#readme",
+  "homepage": "https://github.com/CodingCCarpenter/node-auth1-project-webpt9",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
-    "knex": "^0.20.10"
+    "knex": "^0.20.10",
+    "nodemon": "^2.0.2",
+    "sqlite3": "^4.1.1"
+
   }
 }
