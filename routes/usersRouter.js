@@ -3,6 +3,7 @@ const bcrypt = require("bcryptjs");
 const router = express.Router();
 
 const Users = require("../data/helpers/dbModel.js");
+const { restricted } = require("../")
 
 // POST "/api/register"
 router.post("/register", (req, res) => {
