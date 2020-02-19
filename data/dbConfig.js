@@ -1,7 +1,9 @@
-const knex = require("knex");
-const config = require("../knexfile.js");
-const environment = process.env.NODE_ENV || "development";
+const restricted = (req, res, next) => {
+    if (!req.session || !req.session.user) {
+        res.status(401).json({ message: "Restricted Section" });
+    } else {
+        next();
+    }
+}
 
-const db = knex(config[environment]);
-
-module.exports = db;
+module.exports = { restricted };
